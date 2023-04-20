@@ -11,6 +11,17 @@ This will keep update
 * 定时器执行队列
 * 批量函数执行处理逻辑
 
+
+使用方法：
+1. 需要cmake3.10及以上
+3. 确保当前在根目录programTest下
+5. mkdir build  //创建一个build文件夹 进入该build路径
+6. cmake ..
+7. ./ProgramTest // 进行测试。
+
+支持gdb调试，使用方法：在build路径下
+执行：gdb ./ProgramTest即可。
+
 ### 框架说明：
 * 定时器：专门开辟了一个线程去处理超时下链工作，下链之后进入任务调度机中排队执行，十分优雅可控。
 </br>优点：查找、增加删除时间复杂度：O(1) 
