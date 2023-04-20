@@ -79,13 +79,6 @@ typedef enum
 extern MsgQueue_s g_MsgQueue[];
 #define MQ_EMPTY(Q)      ((Q)->front == (Q)->rear)
 #define MQ_SEM_WAIT(MQ)  sem_wait(&g_MsgQueue[MQ].msgSem)
-#define MALLOC(P, SIZE) \
-	do { \
-		P = (typeof(*(P))*)malloc(SIZE);\
-		if (NULL != P) { \
-			memset(P, 0, SIZE); \
-		} \
-	}while(0)
 
 void MsgQueueInit(void);
 int MsgEnQueue(MsgQueue_e mq, TaskNode_s *node);
