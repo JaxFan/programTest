@@ -1,7 +1,7 @@
 /**
  * @File Name: taskCall.h
  * @brief 任务队列的框架设计 
- * @authorjieping.zhu (jieping.zhu@seres.cn)
+ * @authorjieping.zhu (jax482@foxmail.com)
  * @Version : 1.0
  * @Creat Date : 2023-04-14
  * 

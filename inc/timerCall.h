@@ -1,7 +1,7 @@
 /**
  * @File Name: timerCall.h
  * @brief  基于task任务机制框架之上，再次封装一个比toolkit更多功能，完美的框架。
- * @authorjieping.zhu (jieping.zhu@seres.cn)
+ * @authorjieping.zhu (jax482@foxmail.com)
  * @Version : 1.0
  * @Creat Date : 2023-04-19
  * 

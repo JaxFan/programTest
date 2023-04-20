@@ -5,7 +5,7 @@
  * 
  * TODO
  * 1.可以考虑动态，静态两种初始化方式。
- * @authorjieping.zhu (jieping.zhu@seres.cn)
+ * @authorjieping.zhu (jax482@foxmail.com)
  * @Version : 1.0
  * @Creat Date : 2023-04-19
  * 

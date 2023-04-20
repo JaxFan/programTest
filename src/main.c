@@ -1,7 +1,7 @@
 /**
  * @File Name: main.c
  * @brief  用于测试一些框架
- * @authorjieping.zhu (jieping.zhu@seres.cn)
+ * @authorjieping.zhu (jax482@foxmail.com)
  * @Version : 1.0
  * @Creat Date : 2023-04-14
  * 
