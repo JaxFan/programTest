@@ -19,6 +19,7 @@ message(STATUS "CMAKE_CXX_FLAGS: " "${CMAKE_CXX_FLAGS}")
 include_directories(
     ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/inc/
+    ${PROJECT_SOURCE_DIR}/inc/multiProcessTest/
 )
 
 set(TSP_APP_SRCS
@@ -27,7 +28,16 @@ set(TSP_APP_SRCS
     src/timer/timerCall.c
 )
 
+set(TEST_PROCESS_TEST
+    src/multiProcessTest/ProcessTestMain.c
+)
+
+
 
 add_executable(ProgramTest ${TSP_APP_SRCS})
 target_link_libraries(ProgramTest pthread)#pthread是保障ptherad semaphore等能正常使用的关键！！
 install(TARGETS ProgramTest DESTINATION ${PROJECT_INSTALL_PREFIX}  COMPONENT Test)
+
+add_executable(ProcessTest ${TEST_PROCESS_TEST})
+target_link_libraries(ProcessTest pthread)#pthread是保障ptherad semaphore等能正常使用的关键！！
+install(TARGETS ProcessTest DESTINATION ${PROJECT_INSTALL_PREFIX}  COMPONENT ProcessTest)

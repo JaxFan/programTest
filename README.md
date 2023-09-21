@@ -17,7 +17,8 @@ This will keep update
 3. 确保当前在根目录programTest下
 5. mkdir build  //创建一个build文件夹 进入该build路径
 6. cmake ..
-7. ./ProgramTest // 进行测试。
+7. 执行完成后本路径下会产生一个makefile文件，执行 make 命令
+7. 会产生各种可执行文件-》例如：ProgramTest 再敲 ./ProgramTest  进行测试。
 
 支持gdb调试，使用方法：在build路径下
 执行：gdb ./ProgramTest即可。
