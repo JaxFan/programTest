@@ -32,7 +32,10 @@ set(TEST_PROCESS_TEST
     src/multiProcessTest/ProcessTestMain.c
 )
 
-
+#make handler Process
+set(TSP_HANDLER_APP_SRCS
+    src/handlerLink/handlerLink.c
+)
 
 add_executable(ProgramTest ${TSP_APP_SRCS})
 target_link_libraries(ProgramTest pthread)#pthread是保障ptherad semaphore等能正常使用的关键！！
@@ -41,3 +44,8 @@ install(TARGETS ProgramTest DESTINATION ${PROJECT_INSTALL_PREFIX}  COMPONENT Tes
 add_executable(ProcessTest ${TEST_PROCESS_TEST})
 target_link_libraries(ProcessTest pthread)#pthread是保障ptherad semaphore等能正常使用的关键！！
 install(TARGETS ProcessTest DESTINATION ${PROJECT_INSTALL_PREFIX}  COMPONENT ProcessTest)
+
+set(AIMProcess HandlerTest)
+add_executable(${AIMProcess} ${TSP_HANDLER_APP_SRCS})
+target_link_libraries(${AIMProcess} pthread)#pthread是保障ptherad semaphore等能正常使用的关键！！
+install(TARGETS ${AIMProcess} DESTINATION ${PROJECT_INSTALL_PREFIX}  COMPONENT ${AIMProcess})
